@@ -1,0 +1,35 @@
+.projects {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.projects li::before {
+    content: '';
+    background-image: url('../images/github.svg');
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+.projects li {
+    list-style: none;
+    padding: 1rem;
+    width: 100%;
+}
+
+.projects li a {
+    display: flex;
+    margin-left: 2rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.projects li a:hover {
+    text-decoration: underline;
+}

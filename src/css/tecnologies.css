@@ -1,0 +1,23 @@
+section {
+    width: 100%;
+}
+
+.tecnologies {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.title {
+    padding: 1rem;
+}
+.tecnologies li {
+    list-style: none;
+}
+
+#javascript {
+    margin-left: 0.8rem;
+}
+

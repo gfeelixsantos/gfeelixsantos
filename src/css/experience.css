@@ -1,0 +1,23 @@
+.experience {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding: 1rem;
+}
+
+.title p {
+    text-align: justify;
+}
+
+.experience li {
+    list-style: none;
+}
+
+.experience li span::before {
+    content: '';
+    background-image: url('../images/work.svg');
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+}

@@ -1,0 +1,88 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header .profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.header h1 {
+    font-family: url('../fonts/NeueMachina-Regular.otf');
+    text-align: center;
+}
+
+.information {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    width: 100%;
+}
+
+.information p {
+    display: flex;
+    margin: .5rem;
+}
+
+.job::before {
+    content: '';
+    background-image: url('../images/profile.svg');
+    width: 24px;
+    height: 19px;
+    margin-right: .5rem;
+}
+
+.location::before {
+    content: '';
+    background-image: url('../images/location.svg');
+    width: 24px;
+    height: 19px;
+    margin-right: .5rem;
+}
+
+.phone::before {
+    content: '';
+    background-image: url('../images/phone.svg');
+    width: 24px;
+    height: 19px;
+    margin-right: .5rem;
+}
+
+.email::before {
+    content: '';
+    background-image: url('../images/email.svg');
+    width: 24px;
+    height: 19px;
+    margin-right: .5rem;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .header {
+        display:grid;
+        grid-template-areas: 
+        "profile title"
+        "profile information";
+    }
+
+    .header h1 {
+        text-align: start;
+    }
+
+    .header .profile {
+        grid-area: profile;
+        margin: 0 auto;
+    }
+
+    .header .title {
+        grid-area: title;
+    }
+
+    .header .information {
+        grid-area: information;
+    }
+}

@@ -1,0 +1,31 @@
+.languages {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-right: 1rem;
+    list-style: none;
+    width: 100%;
+}
+
+.languages li {
+    margin-right: 2rem;
+}
+
+#brasil::before {
+    content: '';
+    background-image: url('../images/brasil.svg');
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+}
+
+#usa::before {
+    content: '';
+    background-image: url('../images/usa.svg');
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+}
