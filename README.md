@@ -10,7 +10,7 @@
 
 ![Top Langs](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=gfeelixsantos&bg_color=000&border_color=30A3DC&title_color=E94D5F&text_color=FFF)
 
-<div style="display: flex; gap: 15px">
+<div style="display: inline-block; gap: 15px">
 
 [![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=gfeelixsantos&repo=NTT-Data-Desafio-CSS&bg_color=000&border_color=30A3DC&show_icons=true&icon_color=30A3DC&title_color=E94D5F&text_color=FFF)](https://github.com/gfeelixsantos/SEUREPOSITORIO)
 
