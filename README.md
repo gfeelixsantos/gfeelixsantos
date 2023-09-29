@@ -21,7 +21,7 @@
 <p style="margin:0; font-weight:bolder">Tecnologias</p>
 <hr style="margin: 0">
 
-<div style="display:flex; justify-content:center">
+<div style="display:inline-block; justify-content:center">
 
 ![HTML5](https://img.shields.io/badge/HTML5-000?style=for-the-badge&logo=html5)
 
