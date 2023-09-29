@@ -1,9 +1,9 @@
-## Bem vindo 👋
+# Bem vindo 👋
 <hr style="margin:0">
 
 <div align="center" style="margin:0">
 
-#### Apaixonado pela tecnologia e inspirado pelo desenvolvimento.
+### Apaixonado pela tecnologia e inspirado pelo desenvolvimento.
 </div>
 
 <div align="center">
@@ -18,7 +18,7 @@
 
 </div>
 
-<p style="margin:0; font-weight:bolder">Tecnologias</p>
+<h2 style="margin:0; font-weight:bolder">Tecnologias</h2>
 <hr style="margin: 0">
 
 <div style="display:inline-block; justify-content:center">
@@ -31,7 +31,7 @@
 </div>
 
 
-<p style="margin:0; font-weight:bolder"> Redes Sociais</p>
+<h2 style="margin:0; font-weight:bolder"> Redes Sociais</h2>
 <hr style="margin: 0">
 
 <div style="display:flex; justify-content:center">
