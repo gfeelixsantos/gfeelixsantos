@@ -29,13 +29,3 @@
 ![Puppeteer](https://img.shields.io/badge/puppeteer-000?style=for-the-badge&logo=puppeteer)
 ![Vscode](https://img.shields.io/badge/Vscode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 </div>
-
-
-<h2 style="margin:0; font-weight:bolder"> Redes Sociais</h2>
-<hr style="margin: 0">
-
-<div style="display:flex; justify-content:center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-000?style=for-the-badge&logo=linkedin&logoColor=0E76A8)](https://www.linkedin.com/in/gabriel-felix-85ba259b/)
-
-</div>
