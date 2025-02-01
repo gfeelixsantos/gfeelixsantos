@@ -10,14 +10,6 @@
 
 ![Top Langs](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=gfeelixsantos&bg_color=000&border_color=30A3DC&title_color=E94D5F&text_color=FFF)
 
-<div style="display: inline-block; gap: 15px">
-
-[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=gfeelixsantos&repo=NTT-Data-Desafio-CSS&bg_color=000&border_color=30A3DC&show_icons=true&icon_color=30A3DC&title_color=E94D5F&text_color=FFF)](https://github.com/gfeelixsantos/SEUREPOSITORIO)
-
-[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=gfeelixsantos&repo=NLW-Explorer-2022&bg_color=000&border_color=30A3DC&show_icons=true&icon_color=30A3DC&title_color=E94D5F&text_color=FFF)](https://github.com/gfeelixsantos/SEUREPOSITORIO)
-
-</div>
-
 <h2 style="margin:0; font-weight:bolder">Tecnologias</h2>
 <hr style="margin: 0">
 
@@ -35,7 +27,8 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-000?style=for-the-badge&logo=typescript)
 ![Puppeteer](https://img.shields.io/badge/puppeteer-000?style=for-the-badge&logo=puppeteer)
 ![Vscode](https://img.shields.io/badge/Vscode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-
+![Vscode](https://img.shields.io/badge/Vscode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 </div>
 
 
