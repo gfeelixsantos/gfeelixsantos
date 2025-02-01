@@ -1,6 +1,4 @@
 # Bem vindo 👋
-<hr style="margin:0">
-
 <div align="center" style="margin:0">
 
 ### Apaixonado pela tecnologia e inspirado pelo desenvolvimento.
