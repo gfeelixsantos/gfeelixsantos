@@ -1,149 +1,217 @@
-# Gabriel Felix
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:0f172a,100:2563eb&text=Gabriel%20Felix&fontColor=ffffff&fontSize=42&fontAlignY=40&desc=Software%20Engineer%20%7C%20Node.js%20%7C%20NestJS%20%7C%20TypeScript&descAlignY=58" alt="header" />
+</p>
 
-**Engenheiro de Software | Node.js, NestJS, TypeScript | Sistemas Distribuídos, Filas Assíncronas e Integração com Assinatura Digital PSC/BRy**
-
----
-
-## Sobre Mim
-
-Desenvolvo sistemas distribuídos que operam em ambientes de alta criticidade — onde cada bug tem impacto real e cada decisão arquitetural afeta centenas de pessoas.
-
-Nos últimos anos, construí e mantive a infraestrutura de um ecossistema para clínicas de saúde ocupacional que processa milhares de atendimentos mensais.
-
-### O que já fiz na prática:
-
-**Integração com Assinatura Digital (PSC/BRy)**
-Implementei do zero a integração com o BRy Integra + HUB Signer, incluindo sessões com escopo "signature_session" que permitem ao médico assinar 30+ documentos por dia sem precisar autorizar cada um. Isso exigiu entender profundamente OAuth do provedor PSC, validação de certificado em nuvem, e a diferença entre assinatura híbrida e qualificada.
-
-**Processamento Assíncrono com Filas (Azure Queue)**
-Desenhei e implementei uma arquitetura onde o backend NestJS enfileira mensagens para workers que processam PDFs em background. O desafio foi garantir idempotência — o mesmo documento não pode ser assinado duas vezes se o worker cair no meio do processo. Implementei política de retry com backoff exponencial e circuit breaker.
-
-**Geração e Manipulação de PDFs Médicos**
-Utilizei pdf-lib e pdfmake para gerar documentos ASO e resultados de exames. O tricky part foi sobrepor dados do médico (CRM, UF) no PDF antes da assinatura digital, respeitando as coordenadas exatas exigidas pelo formato PAdES.
-
-**Automação de Portais Governamentais (Puppeteer)**
-Construí um desktop app (Electron) que automatiza o preenchimento de eventos S-2240 e S-2220 no portal SOCGED/eSocial. O desafio foi lidar com CAPTCHAs, timeouts de sessão, e a instabilidade inerente de automações de browser.
-
-**Integração C# + Node.js**
-O sistema legado em C# consome dados do MongoDB sincronizado pelo backend Node.js. Isso exigiu implementar strategies de reconciliação de dados entre dois mundos diferentes.
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=3B82F6&center=true&vCenter=true&width=900&lines=Engenheiro+de+Software+com+foco+em+sistemas+cr%C3%ADticos;Node.js+%7C+NestJS+%7C+TypeScript+%7C+Arquitetura+Distribu%C3%ADda;Filas+ass%C3%ADncronas%2C+PDFs%2C+Puppeteer+e+Assinatura+Digital+PSC%2FBRy" alt="typing animation" />
+</p>
 
 ---
 
-## Experiências
+## 👨‍💻 Sobre mim
 
-### CMSO360 — Backend/Infraestrutura (Node.js/NestJS)
-Sistema de gestão completo para clínicas de saúde ocupacional. Atuei como único desenvolvedor backend em um ecossistema que processa agendamentos, exames, ASOs e assinaturas digitais.
+Sou **Engenheiro de Software** com foco em **Node.js, NestJS e TypeScript**, atuando principalmente na construção de **sistemas distribuídos**, **processamento assíncrono**, **integrações complexas** e **aplicações de alta criticidade em produção**.
 
-**Principais entregas:**
+Nos últimos anos, venho desenvolvendo e mantendo um ecossistema completo para **clínicas de saúde ocupacional**, responsável por processar **milhares de atendimentos mensais**, com forte preocupação em:
 
-- Backend NestJS + Arquitetura Distribuída
-- Integração BRy para Assinatura Digital
-- Sistema de Retry com Backoff Exponencial
-- Validação de Identidade Profissional
+- confiabilidade
+- idempotência
+- rastreabilidade
+- integridade de dados
+- performance operacional
 
-### BRY-SIGNER — Portal de Assinatura Digital (Next.js)
-Frontend Next.js para gerenciar envelopes de assinatura digital híbrida (PSC + BRy Easy Sign).
+Trabalho com problemas reais, onde cada decisão técnica impacta fluxo clínico, documentos médicos, assinaturas digitais, integrações governamentais e operação diária.
 
-**Principais entregas:**
-- Interface para Configuração de Sessão PSC
-- Gerenciamento de Envelopes
+---
 
-### eSocial Manager — Automação Desktop (Electron)
-Desktop app para automatizar o envio de eventos eSocial (S-2240, S-2220, S-2210) para o governo brasileiro.
+## 🚀 Especialidades
 
-**Principais entregas:**
-- Automação Puppeteer do Portal SOCGED
-- Loteamento Inteligente
-- Integração SOAP para Web Services
-- Geração de XML eSocial
+### 🔐 Assinatura Digital PSC / BRy
+Implementei integrações com **BRy Integra** e **HUB Signer**, incluindo sessões com escopo `signature_session` para permitir que médicos assinem múltiplos documentos ao longo do dia sem reautorizações constantes.
 
-### Webhook-Jotform — Integração de Formulários (Express.js)
-Microsserviço para receber webhooks do Jotform, processar agendamentos e notificar profissionais.
+### ⚙️ Processamento Assíncrono com Filas
+Desenhei fluxos com **NestJS + workers + Azure Queue**, garantindo **idempotência**, **retry com backoff exponencial** e resiliência contra falhas parciais no processamento de documentos.
 
-**Principais entregas:**
-- Recebimento e Validação de Webhooks
+### 📄 Geração e Manipulação de PDFs
+Utilizei **pdf-lib** e **pdfmake** para gerar ASOs e documentos médicos, incluindo sobreposição de dados profissionais, posicionamento preciso em layout e preparação para assinatura digital **PAdES**.
+
+### 🤖 Automação de Portais
+Construí automações com **Electron + Puppeteer** para envio de eventos ao **eSocial/SOCGED**, lidando com sessões instáveis, timeouts, comportamento variável de portal e cenários com CAPTCHA.
+
+### 🔄 Integração entre Legado e Arquitetura Moderna
+Atuei na reconciliação entre sistemas **Node.js + MongoDB** e aplicações legadas em **C#**, assegurando compatibilidade de dados e continuidade operacional.
+
+---
+
+## 🧠 O que já construí na prática
+
+- Integração completa com **Assinatura Digital PSC/BRy**
+- Arquiteturas com **filas assíncronas e workers**
+- Fluxos com **retry, circuit breaker e tolerância a falhas**
+- Geração de **PDFs médicos com assinatura digital**
+- Integração com **SOAP, XML, Google APIs e WhatsApp**
+- Automação com **Puppeteer** para fluxos governamentais
+- Microsserviços orientados a eventos
+- Reconciliação de dados entre sistemas heterogêneos
+
+---
+
+## 🏗️ Experiência em projetos
+
+### 🏥 CMSO360 — Backend / Infraestrutura
+Sistema de gestão para clínicas de saúde ocupacional, com processamento de agendamentos, exames, ASOs e assinaturas digitais.
+
+**Principais entregas**
+- Backend em **NestJS**
+- Arquitetura distribuída
+- Integração BRy para assinatura digital
+- Retry com backoff exponencial
+- Validação de identidade profissional
+- Fluxos críticos em produção
+
+---
+
+### ✍️ BRY-SIGNER — Portal de Assinatura Digital
+Aplicação frontend em **Next.js** para gerenciamento de envelopes e sessões de assinatura digital híbrida.
+
+**Principais entregas**
+- Configuração de sessão PSC
+- Gerenciamento de envelopes
+- Interface para integração com assinatura digital
+- Fluxos voltados à operação real
+
+---
+
+### 🧾 eSocial Manager — Automação Desktop
+Aplicação desktop com **Electron** para automação do envio de eventos ao eSocial.
+
+**Principais entregas**
+- Automação com **Puppeteer**
+- Loteamento inteligente
+- Integração SOAP
+- Geração de XML para eSocial
+- Tratamento de cenários instáveis de portal
+
+---
+
+### 📨 Webhook-Jotform — Integração de Formulários
+Microsserviço para recebimento de webhooks, processamento de agendamentos e notificações.
+
+**Principais entregas**
+- Recebimento e validação de webhooks
 - Integração WhatsApp
-- Integração AWS (SQS + DynamoDB)
-- IA para Triagem (Gemini)
+- AWS com **SQS + DynamoDB**
+- IA para triagem com **Gemini**
 
 ---
 
-## Stack Consolidada
+## 🛠️ Stack principal
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=nodejs,ts,nestjs,express,nextjs,react,tailwind,mongodb,postgres,prisma,aws,azure,docker,electron,git,github" />
+</p>
 
 ### Backend
-- Node.js (v18+) / **NestJS** (v11+)
-- **TypeScript** (strict mode)
-- **Express.js** (microsserviços leves)
+![Node.js](https://img.shields.io/badge/Node.js-v18%2B-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![NestJS](https://img.shields.io/badge/NestJS-v11%2B-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-Strict%20Mode-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Express](https://img.shields.io/badge/Express-Microsservi%C3%A7os-000000?style=for-the-badge&logo=express&logoColor=white)
 
 ### Frontend
-- **Next.js** (v14+)
-- **React** (v18+)
-- **Tailwind CSS** (v4)
+![Next.js](https://img.shields.io/badge/Next.js-v14%2B-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/React-v18%2B-61DAFB?style=for-the-badge&logo=react&logoColor=000000)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 
-### Database
-- **MongoDB** (collections, aggregations, transactions)
-- **Supabase** (auth, realtime)
-- **PostgreSQL** (via Prisma)
+### Banco de Dados
+![MongoDB](https://img.shields.io/badge/MongoDB-Aggregations%20%7C%20Collections-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-Auth%20%7C%20Realtime-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-via%20Prisma-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 
 ### Cloud & Infra
-- **Azure** (Blob Storage, Queue Storage, App Service)
-- **AWS** (SQS, DynamoDB)
-- **Docker** (multi-stage builds)
+![Azure](https://img.shields.io/badge/Azure-Blob%20%7C%20Queue%20%7C%20App%20Service-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-SQS%20%7C%20DynamoDB-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Multi--stage%20Builds-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
-### Desktop
-- **Electron** (desktop apps)
-
-### PDF & Documentos
-- **pdf-lib** (manipulação low-level)
-- **pdfmake** (geração por templates)
-
-### Automação
-- **Puppeteer Extra** (+ stealth plugins)
-- **Playwright** (cenários de teste)
-
-### Integração
-- **SOAP** (wssecurity-soap)
-- **BRy API** (assinatura digital)
-- **Google APIs** (Drive, Sheets)
+### Automação, PDF e Integrações
+![Electron](https://img.shields.io/badge/Electron-Desktop%20Apps-47848F?style=for-the-badge&logo=electron&logoColor=white)
+![Puppeteer](https://img.shields.io/badge/Puppeteer-Automa%C3%A7%C3%A3o-40B5A4?style=for-the-badge&logo=puppeteer&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-Testes%20e%20cen%C3%A1rios-2EAD33?style=for-the-badge&logo=playwright&logoColor=white)
+![Google Drive](https://img.shields.io/badge/Google%20APIs-Drive%20%7C%20Sheets-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![SOAP](https://img.shields.io/badge/SOAP-WS--Security-5C2D91?style=for-the-badge&logoColor=white)
+![PDF](https://img.shields.io/badge/PDF-pdf--lib%20%7C%20pdfmake-B30B00?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)
 
 ---
 
-## Diferenciais Competitivos
+## 🎯 Diferenciais
 
-1. **Experiência com Sistemas Críticos em Produção** — Sistemas que processam dados médicos reais
-2. **Integração com Assinatura Digital PSC/BRy** — OAuth PSC, token scopes, PAdES
-3. **Processamento Assíncrono com Filas (Azure Queue)** — Idempotência, retry com backoff
-4. **Manipulação de PDFs Médicos** — Geração ASOs, sobreposição de dados, validação PAdES
-5. **Automação de Portais com Puppeteer** — CAPTCHAs, reCAPTCHAs, sessões expiradas
-6. **Integração SOAP + XML** — WS-Security, validação XSD
-7. **Reconciliação de Dados entre Sistemas** — MongoDB ↔ C# legado
-8. **Full-stack com Responsabilidade Real** — Opero em produção, debugo em produção
+- **Experiência com sistemas críticos em produção**
+- **Integração com assinatura digital PSC / BRy**
+- **Arquiteturas assíncronas com filas e workers**
+- **Geração e manipulação de PDFs médicos**
+- **Automação de portais com Puppeteer**
+- **Integração SOAP + XML**
+- **Reconciliação de dados entre Node.js e legado C#**
+- **Full-stack com responsabilidade real sobre operação**
 
 ---
 
-## Projetos em Destaque
+## 🌟 Projetos em destaque
 
 ### CMSO360 — Ecossistema de Saúde Ocupacional
-- Backend NestJS, Next.js, MongoDB, Azure Queue, Azure Blob, Supabase
-- Integração com BRy HUB Signer para assinatura PAdES
-- Sessions PSC com escopo de assinatura reutilizável
+> Backend NestJS, Next.js, MongoDB, Azure Queue, Azure Blob, Supabase
+
+- Integração com **BRy HUB Signer** para assinatura **PAdES**
+- Sessões PSC com reaproveitamento de autorização
 - Retry com backoff exponencial e circuit breaker
-- Upload automático para SOCGED e Google Drive
+- Processamento de documentos em background
+- Upload automatizado e integrações operacionais
+
+---
 
 ### eSocial Manager — Automação eSocial
-- Electron, React, Puppeteer, fast-xml-parser, SOAP, ExcelJS
-- Loteamento automático de funcionários (60 dias por empresa)
-- Automação stealth de browser com detecção de CAPTCHA
-- Geração de XML válido contra schemas eSocial
+> Electron, React, Puppeteer, SOAP, XML, ExcelJS
+
+- Loteamento automático por empresa e período
+- Automação stealth de browser
+- Tratamento de CAPTCHA e sessões instáveis
+- Geração de XML válido conforme schemas eSocial
+- Integrações para operação governamental
 
 ---
 
-## Conecte-se
+## 📊 Estatísticas
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gabrieldevx/)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/gfeelixsantos)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/feliquitox/)
+<p align="center">
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=gfeelixsantos&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gfeelixsantos&layout=compact&theme=tokyonight&hide_border=true" />
+</p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=gfeelixsantos&theme=tokyonight&hide_border=true" />
+</p>
 
 ---
 
-*"Código limpo não é escrito seguindo regras. É escrito com o coração."*
+## 🌐 Conecte-se comigo
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/gabrieldevx/">
+    <img src="https://img.shields.io/badge/LinkedIn-Perfil%20Profissional-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="https://github.com/gfeelixsantos">
+    <img src="https://img.shields.io/badge/GitHub-Reposit%C3%B3rios-181717?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  <a href="https://www.instagram.com/feliquitox/">
+    <img src="https://img.shields.io/badge/Instagram-Contato-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+  </a>
+</p>
+
+---
+
+## 💬 Filosofia
+
+> “Código limpo não é escrito seguindo regras. É escrito com intenção, clareza e responsabilidade.”
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:2563eb,100:0f172a" />
+</p>
